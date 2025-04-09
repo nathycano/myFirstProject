@@ -3,6 +3,5 @@ Esta es una modificacion al codigo!
 
 hola esto es otra linea
 
-new line
+estoy en el database y voy a crear un conflicto con main
 
-estoy en el database y voy a hacer el merge con main
