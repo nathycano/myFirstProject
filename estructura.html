@@ -1,0 +1,165 @@
+<!--label comunication between browser and server, doesn´t need to be closed-->
+<!DOCTYPE html> 
+
+<!--has all the doc of html-->
+<html>
+    <!--head of doc, has info like metadatos, scripts, styles, ubication docs styles, tittle page etc-->
+    <head>
+
+        <meta> <!--add info about the page, add type of languaje -->
+        <meta charset="utf-8"> <!--add type of languaje, identify languaje of the site, latin character -->
+        <meta name="author" content="Nathalie Cano">
+        <meta name="description" content="description of web site">
+        <meta name="keywords" content="tutoriales, html, desarrollo web">
+
+        <!--this is the title of the page-->
+        <title>Estructura de la cabecera</title>
+
+        <!--vincular hojas de estilo o el icono que nos aparece al lado del titulo de la pagina-->
+        <link rel="icon" href="C:\Users\nathy\myFirstProject\img\icono.png">
+
+
+    </head>
+
+    <!--body of web site, Everything written in this tag will be visible to browsers-->
+    <body>
+        <!--Normalmente, se colocan cosas como el logo, el nombre del sitio, menús de navegación-->
+        <header>Cabezote</header>
+
+        <!--enlaces "Inicio", "Nosotros", "Contacto"-->
+        <nav>Barra navegacion</nav>
+        
+        <!--seccion de sitio-->
+        <section>Seccion principal
+            <h2>Noticias Recientes</h2>
+            <p>Esta es la sección principal donde se muestran las noticias más recientes.</p>
+        </section>
+
+        <!--id columnas-->
+        <aside>Columna</aside>
+
+        <!--escribir articulos-->
+        <article>Articulo</article>
+
+        <!--escribir titulos y va hasta el h6 depende tamaño titulo-->
+        <h1>Titulo 1</h1>
+        <h2>Titulo 2</h2>
+        <h3>Titulo 3</h3>
+        <h4>Titulo 4</h4>
+        <h5>Titulo 5</h5>
+        <h6>Titulo 6</h6>
+        
+
+        <!--etiqueta parrafo <p>, etiqueta resaltar negrilla <b>, salto de linea <br> es simple -->
+        <p>Esto es un <b> parrafo</b>, <br> este es otro parrafo </p>
+
+        <!--crea línea horizontal que sirve como divisor temático entre secciones de contenido -->
+        <hr></hr>
+
+        <!--etiqueta vinculos-->
+        <a href="#">vinculo</a>
+        <br>
+
+        <!--permite que imagenes queden organizadas, no se nota a aimple vista-->    
+        <figure>
+            <!--etiqueta imagenes-->
+            <img src="C:\Users\nathy\myFirstProject\img\descarga.jfif">
+        </figure>
+
+        <!--etiqueta auxiliar de figure, para poner pie de pagina a la imagen-->
+        <figcaption>Informacion de la imagen</figcaption>
+        
+
+        <!--hacer conjunto de listas enumeradas-->
+        <ol>
+            <li>Carro</li>
+            <li>Barco</li>
+            <li>Avion</li>
+        </ol>
+
+        <!--hacer conjunto de listas sin enumeracion-->
+        <ul>
+            <li>Carro</li>
+            <li>Barco</li>
+            <li>Avion</li>
+        </ul>
+
+        <!--crear tablas, con atributo border creo las lineas-->
+        <table border="1">
+
+            <!--titulos de la tabla, para darle estructura al codigo-->
+            <thead>
+                <!--se crean las filas-->
+                <tr>
+                    <!--crean columnas-->
+                    <th>Mes</th>
+                    <th>Año</th>               
+                </tr>
+            </thead>
+            
+            <!--cuerpo de la tabla, para darle estructura al codigo-->
+            <tbody>
+                <tr>
+                    <!--crean columnas-->
+                    <td>Enero</td>
+                    <td>$100</td>
+                </tr>
+
+                <tr>
+                    <!--crean columnas-->
+                    <td>Febrero</td>
+                    <td>$200</td>
+                </tr>
+
+            </tbody>          
+        </table>
+
+        <h1>Resultados de Examen</h1>
+        <p>Carlos: <meter value="94" min="0" max="100" high="90"></meter></p>
+        <p>Andres: <meter value="60" min="0" max="100" high="90"></meter></p>
+        <p>Ana: <meter value="85" min="0" max="100" high="90"></meter></p></p>
+        <p>Pedro: <meter value="45" min="0" max="100" high="90"></meter></p></p>
+
+        <!--en vez de meter, progress, sin high, safari o dispositivos mobiles no lee la etiqueta meter-->
+        <h2>Resultados de ventas</h2>
+        <p>Enero: <progress value="94" min="0" max="100"></progress></p>
+        <p>Febrero: <progress value="60" min="0" max="100"></progress></p>
+        <p>Marzo: <progress value="85" min="0" max="100"></progress></p>
+        <p>Abril: <progress value="45" min="0" max="100"></progress></p>
+
+         <!--sus atributos son boleanos, el valor "metadata" le informa al navegador que haga la 
+             precarga del archivo de audio cuando le de play, por defecto biene en auto-->
+         <audio autoplay controls loop preload="auto">
+
+            <!--formato .ogg VORBIS, formato comprimido, poco peso, calidad sonido, reduce ancho banda
+                y streaming, lo soporta chrome, firefox, opera-->
+
+             <!--formato .mp3 archivo comprimido, safari, chrome, explorer, sistemas IOS-->
+
+             <!-- .wap formato sin compresion calidad de audio, uso profesional, consume mucho 
+                  ancho de banda no se debe usar -->
+
+            <!-- formato ACC compresion de datos sin perder calidad, sucesor MP3, menor calidad de peso 
+             y excelente calidad de audio, extensiones son: .m4a, .m4b, .m4p, .mp4, .acc-->
+
+             <!--cual debo usar? los mas comunes: .mp3, .m4a, .ogg 
+             (se recomienda tener como minimo estas 3 extensiones) 
+             IOS por defecto captura mp3, firefox captura .ogg  Se convierten en www.online-convert.com/es-->
+
+             <source src="C:\Users\nathy\myFirstProject\audio\guitar.m4a" type="audio/mp3">
+             <source src="C:\Users\nathy\myFirstProject\audio\guitar.mp3" type="audio/mp3">
+             <source src="C:\Users\nathy\myFirstProject\audio\guitar.ogg" type="audio/mp3">
+         </audio>
+         <br>
+         <video autoplay controls loop width="500" height="200">
+            <!--THEORA OGG .ogg-->
+            <!--MP4 .mp4-->
+         </video>
+
+         <!--pie de pagina-->
+         <footer>Este es el pie de pagina</footer>
+    </body>
+    
+</html>
+
+
