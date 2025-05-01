@@ -23,8 +23,73 @@
 
     <!--body of web site, Everything written in this tag will be visible to browsers-->
     <body>
+
+        <center>
+            <h3>Formulario</h3>
+            <form>
+                <label for="texto">Entrada de texto</label>
+                 <!--el id no se puede repetir en otra parte, solo sea lectura le ponemos el atributo: readonly-->
+                 <!--con required hace que el campo sea obligatorio-->
+                <input id="texto"  type="text" placeholder="Entrada de texto" value="" required>
+
+                <br>
+                <br>
+
+                <!--con required hace que el campo sea obligatorio-->
+                <label for="email">Email</label>
+                <input id="email"  type="email" placeholder="Entrada del correo" value="" required>
+
+                <br>
+                <br>
+
+                <label for="pass">Contraseña</label>
+                <input id="pass"  type="password" placeholder="Ingrese la contraseña" value="" required>
+
+                <br>
+                <br>
+
+                <label for="numb">Numero</label>
+                <input id="numb"  type="number" value="1" min="0" max="3">
+
+                <br>
+                <br>
+
+                <select>
+                    <option>Opción 1</option>
+                    <option>Opción 2</option>
+                    <option>Opción 3</option>
+                    <option>Opción 4</option>
+                </select>
+
+                <br>
+                <br>
+
+                <input id="rojo" type="checkbox"><label for="rojo">Rojo</label>
+                <input id="amarillo" type="checkbox"><label for="amarillo">Amarillo</label>
+                <input id="verde" type="checkbox"><label for="verde">Verde</label>
+
+                <br>
+                <br>
+
+                <!--con name, condiciono para que solo me deje seleccionar una opcion, porq ambos tienen 
+                el mismo atributo, cuando pongo checked, pongo por defecto que este seleccionado-->
+                <input id="blanco" type="radio" name="radio" checked><label for="blanco">Blanco</label>
+                <input id="negro" type="radio" name="radio"><label for="negro">Negro</label>
+
+                <br>
+                <br>
+
+                <input type="submit" value="Enviar formulario">
+
+                
+            </form>
+        </center>
+
         <!--Normalmente, se colocan cosas como el logo, el nombre del sitio, menús de navegación-->
-        <header>Cabezote</header>
+        <header>Cabezote
+            <!--quiere decir division y puedo personalizar la etiqueta para poder usarla en css-->
+            <div id="logotipo"> LOGOTIPO </div>
+        </header>
 
         <!--enlaces "Inicio", "Nosotros", "Contacto"-->
         <nav>Barra navegacion</nav>
@@ -36,7 +101,13 @@
         </section>
 
         <!--id columnas-->
-        <aside>Columna</aside>
+        <aside>
+             <!--clasificar esta seccion de noticias para que todas queden iguales con el atributo class-->
+            <div class="noticia">Noticia 1</div>
+            <div class="noticia">Noticia 2</div>
+            <div class="noticia">Noticia 3</div>
+
+        </aside>
 
         <!--escribir articulos-->
         <article>Articulo</article>
@@ -129,7 +200,7 @@
 
          <!--sus atributos son boleanos, el valor "metadata" le informa al navegador que haga la 
              precarga del archivo de audio cuando le de play, por defecto biene en auto-->
-         <audio autoplay controls loop preload="auto">
+         <audio controls loop preload="auto">
 
             <!--formato .ogg VORBIS, formato comprimido, poco peso, calidad sonido, reduce ancho banda
                 y streaming, lo soporta chrome, firefox, opera-->
@@ -146,15 +217,25 @@
              (se recomienda tener como minimo estas 3 extensiones) 
              IOS por defecto captura mp3, firefox captura .ogg  Se convierten en www.online-convert.com/es-->
 
-             <source src="C:\Users\nathy\myFirstProject\audio\guitar.m4a" type="audio/mp3">
+             <source src="C:\Users\nathy\myFirstProject\audio\guitar.m4a" type="audio/mp4">
              <source src="C:\Users\nathy\myFirstProject\audio\guitar.mp3" type="audio/mp3">
-             <source src="C:\Users\nathy\myFirstProject\audio\guitar.ogg" type="audio/mp3">
+             <source src="C:\Users\nathy\myFirstProject\audio\guitar.ogg" type="audio/ogg">
          </audio>
          <br>
-         <video autoplay controls loop width="500" height="200">
-            <!--THEORA OGG .ogg-->
-            <!--MP4 .mp4-->
+         <video controls loop width="500" height="200">
+            <!--THEORA OGG .ogv firefox, chrom y opera-->
+            <!--MP4 .mp4 safary crhome, explorer, sistema IOS, sistema android-->
+            <!--WEBM .webm adobe, microsoft, moxilla-->
+
+            <source src="C:\Users\nathy\myFirstProject\video\260397_small.mp4" type="video/mp4">
          </video>
+
+         <!--incrustar otro documento HTML dentro del documento actual, links-->
+         <iframe width="500" height="200" src="https://www.youtube.com/embed/G7DkzN6BERY?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.969412281778!2d-75.57345503030098!3d6.2677532122316855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428e0c9c8772f%3A0x10cce7ece69b2e2b!2sUniversidad%20de%20Antioquia!5e0!3m2!1ses!2sco!4v1746044868030!5m2!1ses!2sco" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+        
 
          <!--pie de pagina-->
          <footer>Este es el pie de pagina</footer>
