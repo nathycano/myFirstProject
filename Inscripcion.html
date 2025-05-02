@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Nathalie Cano">
+        <meta name="description" content="En este sitio web prodrás incribirte a nuestra institucion educativa">
+        <meta name="keywords" content="estudio, html, institucion educativa, tecnología">
+
+        <title>Pollitos Devs</title>
+
+        <link rel="icon" href="C:\Users\nathy\myFirstProject\img\aprender.png">
+
+        <!-- <link rel="stylesheet" href="">  lo usare cuando le agregue el css -->
+
+    </head>
+
+    <body>
+
+        <h1 style="display: flex; justify-content: center;">Instituto de tecnología los Pollitos Dev</h1>
+
+        <figure style="display: flex; justify-content: center;">
+            <!--etiqueta imagenes-->
+            <img src="C:\Users\nathy\myFirstProject\img\pollitosdevelop.jpg" width="800" height="300">
+        </figure>
+
+        <!--la etiqueta center ya esta obsoleta en html5 -->
+        <center>
+            <h3>Formulario de inscripción</h3>
+            <form>
+                <label for="nombre">Nombre Completo *</label>
+                <input id="nombre"  type="text" placeholder="Ingresa tu nombre completo" value="" required>
+
+                <br>
+                <br>
+
+                <label for="tip_id">Tipo de Documento *</label>
+                <select required>
+                    <option></option>
+                    <option>Cédula de Ciudadanía</option>
+                    <option>Cédula de extranjería</option>
+                    <option>Tarjeta de Identidad</option>
+                    <option>Pasaporte</option>
+                </select>
+
+                <br>
+                <br>
+                
+                <label for="identify">Número de Identificacion *</label>
+                <input id="identify"  type="text" placeholder="Ingresa tu número de Identificacion" value="" required>
+
+                <br>
+                <br>
+                
+                <label for="bday">Ingresa tu fecha de nacimiento *</label>
+                <input type="date" name="bday" />
+                
+                <br>
+                <br>
+                
+                <label for="telefono">Número de contacto </label>
+                <input id="telefono" type="number" placeholder="Ingresa tu número contacto" value="" minlength="7" maxlength="10" required>
+
+                <br>
+                <br>
+
+                <label for="telemer">Número de contacto de emergencia </label>
+                <input id="telemer" type="number" placeholder="Ingresa tu número contacto de emergencia" value="" minlength="7" maxlength="10" required>
+
+                <br>
+                <br>
+
+                <label for="email">Ingresa tu email *</label>
+                <input id="email"  type="email" placeholder="Entrada del correo electronico" value="" required>
+                
+                <br>
+                <br>
+
+                <label for="estrato">Estrato Socioeconomico</label>
+                <input id="estrato"  type="number" value="1" min="0" max="6">
+
+                <br>
+                <br>
+
+                <label for="curso">Selecciona el Curso que Deseas *</label>
+                <select required>
+                    <option></option>
+                    <option>Curso Git y GitHub</option>
+                    <option>Curso Html5</option>
+                    <option>Curso CSS</option>
+                    <option>Curso JavaScript</option>
+                    <option>Curso Json</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="conocimiento">Tienes conocimientos previos del tema</label>
+                <input id="si" type="radio" name="radio"><label for="si">Si</label>
+                <input id="no" type="radio" name="radio" checked><label for="no">No</label>
+
+                <br>
+                <br>
+
+                <table border="1">
+                           
+                                <td>
+                                <p> Acepta que los datos personales que acaba de ingresar podran ser utilizados para fines de inscripción? </p>
+                                
+                                <br> 
+
+                                <center>
+                                <a href="C:\Users\nathy\myFirstProject\img\Política_Manejo_Datos.pdf" target="_blank">Haz clic aquí para mas Información de nuestra politica de datos</a>
+
+                                <br>
+                                <br> 
+
+                                <input id="acepto" type="radio" name="acepradio" checked><label for="acepto">Acepto</label>
+                                <input id="noacepto" type="radio" name="acepradio"><label for="noacepto">No Acepto</label>
+                                </center>
+
+                                </td>
+                                                          
+                </table>
+            
+                <br>
+                <br> 
+
+                <input type="submit" value="Enviar formulario">
+                
+            </form>
+            <br>
+            <br>
+
+            <h1>Vísitanos en:</h1>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.132418909159!2d-75.61453323030213!3d6.246275212518821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429833a416815%3A0xa482dce081965002!2zQ2wgMzcgIyA4NkEtMzksIENyaXN0w7NiYWwsIE1lZGVsbMOtbiwgTGEgQW3DqXJpY2EsIE1lZGVsbMOtbiwgQW50aW9xdWlh!5e0!3m2!1ses-419!2sco!4v1746153207047!5m2!1ses-419!2sco" width="400" height="250"></iframe>
+       
+        </center>
+
+    </body>
+</html>
